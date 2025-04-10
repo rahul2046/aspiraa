@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aspiraa - Your Internship Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #0066ff;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    nav {
+      background: #0047b3;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .hero {
+      background: #e8f0fe;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 14px 35px;
+      font-size: 1rem;
+      background: #0066ff;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .button:hover {
+      background: #003d99;
+      transform: scale(1.05);
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .feature-box {
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      padding: 30px;
+      width: 270px;
+      transition: transform 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f2f2f2;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 768px) {
+      .feature-box {
+        width: 100%;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 data-aos="fade-down">Aspiraa</h1>
+    <p data-aos="fade-down" data-aos-delay="200">Your Launchpad to Internships and Research Opportunities</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#join">Join</a>
+  </nav>
+
+  <section class="hero" id="about" data-aos="fade-up">
+    <h2>What is Aspiraa?</h2>
+    <p>Aspiraa helps students craft impactful resumes, SOPs, and LORs while offering personalized guidance and a curated roadmap to top-tier internships and research roles.</p>
+  </section>
+
+  <section id="features">
+    <h2 data-aos="fade-up">Why Aspiraa?</h2>
+    <div class="features">
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Resume Crafting</h3>
+        <p>Get templates and AI help to build your perfect CV.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
+        <h3>SOP/LOR Help</h3>
+        <p>Use our guide or chatbot to write standout statements & LORs.</p>
+      </div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Internship Roadmaps</h3>
+        <p>Step-by-step strategy to target internships in core, research, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" data-aos="fade-up">
+    <h2>Ready to Get Started?</h2>
+    <p>Join the waitlist to access Aspiraa's beta launch with exclusive resources and chatbot access.</p>
+    <a href="https://forms.gle/your-google-form-link" target="_blank">
+      <button class="button">Join the Waitlist</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aspiraa. Built with ❤️ by Reddy Rahul Saddala</p>
+  </footer>
+
+  <!-- AOS JS for animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
